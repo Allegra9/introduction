@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<title>Slides About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<!--<link rel="stylesheet" href="reset.css" type="text/css">-->
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<body>
+
+
+
+<div class="firstimage mySlides">
+  <img src="img/1max-ostrozhinskiy-212676.jpg" style="width:100%">
+    <h1>Aukse Allegra</h1>
+    <h2>"I am a masterpiece and a work in progress at the same time"</h2>
+</div>
+       
+
+
+<div class="secondimage mySlides">
+  <img src="img/2geran-de-klerk-136351.jpg" style="width:100%">
+    <h3 class="secondimagge">environment</h3>
+    <h5 class="secondimaggeText">If you care about environment and climate change, we could work together</h5>
+</div>
+
+    
+
+<div class="thirdText mySlides">
+  <img src="img/3matt-hoffman-158288.jpg" style="width:100%">
+    <h4 class="thirdimagge">contact me</h4>
+    <h5 class="thirdimaggeText">We can have a quick chat on great ideas over a decaf coconut latte soon</h5>
+</div>
+
+    
+  
+
+    
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+
+    
+ <footer>
+        
+        <ul class="bottomList">
+        
+            <li>
+                 <a href="#instagram"><img class="instagram" src="img/if_social-instagram-new-square2_1164347.png" alt="Instagram" title="Instagram"></a>
+            </li>
+            <li>
+                <a href="#gitHub"><img class="github" src="img/if_icon-social-github_211904.png" alt="GitHub" title="GitHub">
+                </a>
+            </li>
+            <li>
+                <a href="#linkedIn"><img           class="linkedin"   src="img/if_linkedin_201195.png"   alt="LinkedIn" title="LinkedIn"></a>
+            </li>
+            </ul>
+        
+
+
+        <p class="credits">Photos taken from Unsplash. Credits: 1. Max Ostrozhinskiy 2. Geran De Klerk 3. Matt Hoffman</p>
+     
+        <p>&copy; Allegra 2017</p>
+        
+    </footer> 
+    
+    
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
+
