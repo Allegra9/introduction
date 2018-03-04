@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +10,17 @@
     <meta name="description" content="Your description goes here" />
     <meta name="author" content="Your name goes here" />
     <meta name="keywords" content="keyword one, keyword two, keyword three" />
-    
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
+<!--Google Fonts-->
+
+<!--Style sheet -->
 <link rel="stylesheet" href="styles.css" type="text/css">
 
+<!--1.LINK FOR BOOTSTRAP--> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+<!--2.LINK FOR ICONS-->   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -28,70 +33,29 @@
   <div class="parallax3">
   </div>
 
-
-<!-- <div class="firstimage mySlides">
-  <img src="img/1max-ostrozhinskiy-212676.jpg" style="width:100%">
-    <h1>Aukse Allegra</h1>
-    <h2>"I am a masterpiece and a work in progress at the same time"</h2>
-</div>
-       
-
-
-<div class="secondimage mySlides">
-  <img src="img/2geran-de-klerk-136351.jpg" style="width:100%">
-    <h1 class="secondimagge">environment</h1>
-    <h2 class="secondimaggeText">If you care about environment and climate change, we could work together</h2>
-</div>
-
+  <div class="parallax4">
+  </div>
     
-
-<div class="thirdText mySlides">
-  <img src="img/3matt-hoffman-158288.jpg" style="width:100%">
-    <h1 class="thirdimagge">contact me</h1>
-    <h2 class="thirdimaggeText">We can have a quick chat on great ideas over a decaf coconut latte soon</h2>
-</div> -->
-    
-<footer>
-        
-    <ul class="bottomList">
-      <li>
-        <a href="#instagram"><img class="instagram" src="img/if_social-instagram-new-square2_1164347.png" alt="Instagram" title="Instagram"></a>
-      </li>
-      <li>
-        <a href="#gitHub"><img class="github" src="img/if_icon-social-github_211904.png" alt="GitHub" title="GitHub"></a>
-      </li>
-      <li>
-        <a href="#linkedIn"><img class="linkedin" src="img/if_linkedin_201195.png" alt="LinkedIn" title="LinkedIn"></a>
-      </li>
-    </ul>
-
-    <p class="credits">Photos taken from Unsplash. Credits: 1. Max Ostrozhinskiy 2. Geran De Klerk 3. Matt Hoffman</p>
+<footer class="text-center">
      
-    <p>&copy; Allegra 2017</p>
+    <p>Coded by Allegra</p>
         
 </footer> 
+
+<!--SCRIPT LINKS END OF BODY-->  
     
-<!--
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
+<!--4.jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<!-- JAVASCRIPT -->
+<script src="main.js"></script>
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+<!--5.this one for TETHER.IO-->
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    
+<!--6.JS for BOOTSTRAP-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
--->
 
 </body>
 </html>
