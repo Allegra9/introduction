@@ -1,22 +1,60 @@
 
 body, html {
-    height: 100%;
+    height: 100%;   /*REQUIRED!*/
+    position: relative;
 }
 
-div {
-    height:100px;
-    background-color:grey;
-    font-size:36px;
+.nav {
+    width: 100%;
+    position: absolute;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    color: #fff;
+    padding: 20px;
+    list-style: none;
 }
 
-div img {
-    width: 100px;
-    height: 100px;
+.logo-space {
+    width: 30%;
+    margin-left: 10%;
 }
 
-.parallax {
+span {
+    display: inline;
+    margin-left: 2%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+}
+
+.digital-text {
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 20%;
+}
+
+.digital-title {
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 7em;
+}
+
+.disrupting-text {
+/*    position: absolute;
+    margin-top: 45%;*/
+    margin-left: 10%;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0.3em;
+}
+
+.parallax1 {
     /* The image used */
-    background-image: url("img/zac-ong-577634-unsplash.jpg");
+    /*background-image: url("img/zac-ong-577634-unsplash.jpg");*/
+    background-image: url("img/piotr-chrobot-276746-unsplash.jpg");
+
 
     /* Set a specific height */
     height: 100%; 
@@ -26,6 +64,37 @@ div img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.first-text {
+    position: relative;
+    padding-top: 10%;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: gray;
+    color: #fff;
+    height: 500px;
+    color: #fff;
+ /*   font-family: 'Open Sans Condensed', sans-serif;*/
+    font-family: 'Muli', sans-serif;
+    font-size: 1.05em;
+/*    letter-spacing: 0.2em;*/
+}
+
+.first-text h5 {
+    padding-bottom: 20px;
+}
+
+#learn-more {
+    position: relative;
+    margin-top: 7%;
+    margin-left: 35%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 40px 20px 40px;
+    border-radius: 50px;
+    border: #000 solid;
 }
 
 .parallax2 {
@@ -34,7 +103,7 @@ div img {
 
     /* Set a specific height */
     height: 100%; 
-    margin-top: 300px;
+/*    margin-top: 500px;*/
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -43,13 +112,25 @@ div img {
     background-size: cover;
 }
 
+.complexity-text{
+
+}
+
+.complexity-title {
+
+}
+
+.bigdata-text {
+    
+}
+
 .parallax3 {
     /* The image used */
     background-image: url("img/duy-nguyen-390980-unsplash.jpg");
 
     /* Set a specific height */
     height: 100%; 
-    margin-top: 300px;
+    margin-top: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -64,7 +145,7 @@ div img {
 
     /* Set a specific height */
     height: 100%; 
-    margin-top: 300px;
+    margin-top: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
