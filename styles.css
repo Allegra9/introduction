@@ -28,33 +28,33 @@ span {
     letter-spacing: 0.1em;
 }
 
-.digital-text {
+.image-text {
     position: absolute;
     margin-top: 30%;
-    margin-left: 20%;
-}
-
-.digital-title {
+    margin-left: 23%;
     color: #fff;
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.image-title {
     font-size: 7em;
 }
 
-.disrupting-text {
-/*    position: absolute;
-    margin-top: 45%;*/
-    margin-left: 10%;
-    color: #fff;
-    font-family: 'Open Sans Condensed', sans-serif;
+.subtext {
+    margin-left: 15%;
     font-size: 1.5em;
     letter-spacing: 0.3em;
+}
+
+.complexity {
+    margin-top: 20%;
+    margin-left: 30%;
 }
 
 .parallax1 {
     /* The image used */
     /*background-image: url("img/zac-ong-577634-unsplash.jpg");*/
     background-image: url("img/piotr-chrobot-276746-unsplash.jpg");
-
 
     /* Set a specific height */
     height: 100%; 
@@ -66,7 +66,7 @@ span {
     background-size: cover;
 }
 
-.first-text {
+.between-text {
     position: relative;
     padding-top: 10%;
     text-align: left;
@@ -74,7 +74,7 @@ span {
     padding-right: 10%;
     background-color: gray;
     color: #fff;
-    height: 500px;
+    height: 400px;
     color: #fff;
  /*   font-family: 'Open Sans Condensed', sans-serif;*/
     font-family: 'Muli', sans-serif;
@@ -82,13 +82,13 @@ span {
 /*    letter-spacing: 0.2em;*/
 }
 
-.first-text h5 {
+.between-text h5 {
     padding-bottom: 20px;
 }
 
-#learn-more {
+#button {
     position: relative;
-    margin-top: 7%;
+    margin-top: 5%;
     margin-left: 35%;
     background-color: #000;
     color: #fff;
@@ -112,25 +112,13 @@ span {
     background-size: cover;
 }
 
-.complexity-text{
-
-}
-
-.complexity-title {
-
-}
-
-.bigdata-text {
-    
-}
-
 .parallax3 {
     /* The image used */
     background-image: url("img/duy-nguyen-390980-unsplash.jpg");
 
     /* Set a specific height */
     height: 100%; 
-    margin-top: 500px;
+/*    margin-top: 500px;*/
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -145,7 +133,7 @@ span {
 
     /* Set a specific height */
     height: 100%; 
-    margin-top: 500px;
+    /*margin-top: 500px;*/
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
