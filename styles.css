@@ -313,7 +313,7 @@ footer {
 @media (min-device-width : 320px) and (max-device-width : 568px) and (orientation: portrait) {
     .parallax {
         /* default height landscape*/
-        height: 568px;
+        height: 1568px;
     }
 } 
 
