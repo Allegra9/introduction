@@ -99,11 +99,7 @@ body, html {
    box-shadow: none;
 }
 
-.parallax1 {
-    /* The image used */
-    /*background-image: url("img/zac-ong-577634-unsplash.jpg");*/
-    background-image: url("img/piotr-chrobot-276746-unsplash.jpg");
-
+.parallax {
     /* Set a specific height */
     height: 100%; 
     width: 100%;
@@ -113,51 +109,23 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+
+.parallax1 {
+    background-image: url("img/piotr-chrobot-276746-unsplash.jpg");
 }
 
 .parallax2 {
-    /* The image used */
     background-image: url("img/james-padolsey-152010-unsplash.jpg");
-
-    /* Set a specific height */
-    height: 100%; 
-    width: 100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .parallax3 {
-    /* The image used */
     background-image: url("img/duy-nguyen-390980-unsplash.jpg");
-
-    /* Set a specific height */
-    height: 100%; 
-    width: 100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .parallax4 {
-    /* The image used */
     background-image: url("img/piotr-chrobot-276746-unsplash.jpg");
-
-    /* Set a specific height */
-    height: 100%; 
-    width: 100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 footer {
@@ -298,6 +266,57 @@ footer {
 
 
 }
+
+
+
+    /* fix for the ipad */
+@media (min-device-width : 768px) and (max-device-width : 1024px)  { 
+    .parallax {
+        background-attachment: scroll;
+        /* default height landscape*/
+        height: 768px;
+    }
+
+/*    .ipadfix{
+        height: 300px !important;
+    }
+    img.ipadfix{
+        width:100% !important; 
+        height:auto !important;
+    }*/
+}
+/* fix for the ipad */
+@media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
+    .parallax {
+        /* default height landscape*/
+        height: 1024px;
+    }
+} 
+
+/* fix for the iphone */
+@media (min-device-width : 320px) and (max-device-width : 568px)  { 
+    .parallax {
+        background-attachment: scroll;
+        /* default height landscape*/
+        height: 320px;
+    }
+
+/*    .ipadfix{
+        height: 150px !important;
+    }
+    img.ipadfix{
+        width:100% !important; 
+        height:auto !important;
+    }*/
+}
+/* fix for the iphone */
+@media (min-device-width : 320px) and (max-device-width : 568px) and (orientation: portrait) {
+    .parallax {
+        /* default height landscape*/
+        height: 568px;
+    }
+} 
+
 
 
 
