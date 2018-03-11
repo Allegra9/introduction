@@ -112,6 +112,7 @@ body, html {
 
     /* Set a specific height */
     height: 100%; 
+    width: 100%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -126,6 +127,7 @@ body, html {
 
     /* Set a specific height */
     height: 100%; 
+    width: 100%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -140,6 +142,7 @@ body, html {
 
     /* Set a specific height */
     height: 100%; 
+    width: 100%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -154,6 +157,7 @@ body, html {
 
     /* Set a specific height */
     height: 100%; 
+    width: 100%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -185,19 +189,19 @@ footer {
 
     .parallax1 {
         height: 200%; 
-        width: 100%;
+        width: 720px;
     }
     .parallax2 {
         height: 200%; 
-        width: 100%;
+        width: 720px;
     }
     .parallax3 {
         height: 200%; 
-        width: 100%;
+        width: 720px;
     }
     .parallax4 {
         height: 200%; 
-        width: 100%;
+        width: 720px;
     }
 
     .image-text {
