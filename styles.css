@@ -144,10 +144,10 @@ footer {
 /* iPhone 6 PORTRAIT ?*/
 @media screen and (max-width: 400px) {
 
-    body, html {
-    height: 200px;   /*REQUIRED!*/
-    width: 600px;
-    }
+/*    body, html {
+    height: 200%;   REQUIRED!
+    width: 568px;
+    }*/
 
     .absolute-nav {
         display: none;
@@ -275,21 +275,25 @@ footer {
         background-attachment: scroll;
         /* default height landscape*/
         height: 768px;
-    }
 
-/*    .ipadfix{
-        height: 300px !important;
+        width: 1024px;
     }
-    img.ipadfix{
-        width:100% !important; 
-        height:auto !important;
-    }*/
+    body, html {
+    height: 200%;   /*REQUIRED!*/
+    width: 1024px;
+    }
 }
 /* fix for the ipad */
 @media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
     .parallax {
         /* default height landscape*/
         height: 1024px;
+
+        width: 768px;
+    }
+    body, html {
+    height: 200%;   /*REQUIRED!*/
+    width: 768px;
     }
 } 
 
@@ -298,22 +302,26 @@ footer {
     .parallax {
         background-attachment: scroll;
         /* default height landscape*/
-        height: 320px;
-    }
+        height: 620px; /*should be 320px*/
 
-/*    .ipadfix{
-        height: 150px !important;
+        width: 568px;
     }
-    img.ipadfix{
-        width:100% !important; 
-        height:auto !important;
-    }*/
+    body, html {
+    height: 200%;   /*REQUIRED!*/
+    width: 568px;
+    }
 }
 /* fix for the iphone */
 @media (min-device-width : 320px) and (max-device-width : 568px) and (orientation: portrait) {
     .parallax {
         /* default height landscape*/
-        height: 1568px;
+        height: 1568px; /*should be 568px*/
+
+        width: 568px;
+    }
+    body, html {
+    height: 200%;   /*REQUIRED!*/
+    width: 568px;
     }
 } 
 
