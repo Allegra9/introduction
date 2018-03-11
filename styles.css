@@ -165,7 +165,7 @@ body, html {
 footer {
     background-color: #000;
     color: #fff;
-    padding: 20px;
+    padding: 100px;
 }
 
 
@@ -180,20 +180,24 @@ footer {
     body, html {
         /*height: 100%; */  /*REQUIRED!*/
         position: relative;
-        width: 140%;
+        width: 150%;
     }
 
     .parallax1 {
         height: 200%; 
+        width: 100%;
     }
     .parallax2 {
         height: 200%; 
+        width: 100%;
     }
     .parallax3 {
         height: 200%; 
+        width: 100%;
     }
     .parallax4 {
         height: 200%; 
+        width: 100%;
     }
 
     .image-text {
@@ -244,7 +248,7 @@ footer {
 
     #fa-chevron-down {
         margin-left: 0;
-        margin-top: 45%;
+        margin-top: 25%;
     }
 
     .between-text {
@@ -265,6 +269,21 @@ footer {
         margin-top: 15%;
         margin-left: 20%;
     }
+
+    #menuToggle {
+     /* menu position:*/
+      top: 100px;
+      left: 100px;
+    }
+
+    #menu a li {
+      padding: 20px 40px 20px 0;
+      width: 200px;
+      font-size: 2.2em;
+      text-align: center;
+      border-bottom: 0.5px gray solid;
+    }
+
 
 
 }
@@ -302,6 +321,7 @@ a:visited {
 #menuToggle {
   display: block;
   position: relative;
+ /* menu position:*/
   top: 50px;
   left: 50px;
   
