@@ -2,42 +2,7 @@
 body, html {
     height: 100%;   /*REQUIRED!*/
     position: relative;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: red solid;
 }
-
-.container {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 150% !important;
-    border: solid;
-
-}
-
-/*.nav {
-    width: 100%;
-    position: absolute;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    margin-right: 5%;
-    color: #fff;
-    padding: 20px;
-    list-style: none;
-}*/
-
-/*.logo-space {
-    width: 30%;
-    margin-left: 10%;
-}*/
-
-/*span {
-    display: inline;
-    margin-left: 2%;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.1em;
-    letter-spacing: 0.1em;
-}*/
 
 .image-text {
     position: absolute;
@@ -45,8 +10,6 @@ body, html {
     margin-left: 23%;
     color: #fff;
     font-family: 'Open Sans Condensed', sans-serif;
-
-    z-index: 2;  /*to overwrite container class*/
 }
 
 .image-title {
@@ -83,11 +46,20 @@ body, html {
 }
 
 #fa-chevron-down {
-    margin-left: 44%;
-    margin-top: 15%;
+    margin-left: 45%;
+    margin-top: 28%;
     background-color: transparent;
     color: #fff;
     cursor: pointer;
+}
+
+#scroll-down {
+    margin-left: 38%;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Muli', sans-serif;
+    font-size: 1em;
 }
 
 .between-text {
@@ -115,7 +87,16 @@ body, html {
     color: #fff;
     padding: 20px 40px 20px 40px;
     border-radius: 50px;
-    border: #000 solid;
+    /*border: #000 solid;*/
+    cursor: pointer;
+    border: none;
+    border: 0;
+}
+
+/* gets rid of that ugly blue outline: */
+#button:focus,#button:active {
+   outline: none !important;
+   box-shadow: none;
 }
 
 .parallax1 {
@@ -183,6 +164,7 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 100px;
+    font-size: 1.2em;
 }
 
 
@@ -196,39 +178,31 @@ footer {
 
     body, html {
     height: 100%;   /*REQUIRED!*/
-    margin: 0 !important;
-    padding: 0 !important;
-    border: red solid;
-
-    width: 150%;
+    width: 580px;
     }
 
-    .container {
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 100% !important;
-        border: solid;
-
+    .absolute-nav {
+        display: none;
     }
 
-/*    body, html {
-        width: 140%;
-    }*/
+    span.logo-space {
+    margin-left: 35%;
+    }
 
     .parallax1 {
-        height: 200%; 
+        height: 1300px; 
         width: 100%;
     }
     .parallax2 {
-        height: 200%; 
+        height: 1300px;
         width: 100%;
     }
     .parallax3 {
-        height: 200%; 
+        height: 1300px;
         width: 100%;
     }
     .parallax4 {
-        height: 200%; 
+        height: 1300px;
         width: 100%;
     }
 
@@ -248,13 +222,13 @@ footer {
 
     .subtext {
         margin-left: 0;
-        font-size: 1.5em;
+        font-size: 1.7em;
    /*     letter-spacing: 0.3em;*/
     }
 
     .complexity {
         margin-top: 60%;
-        margin-left: 14%;
+        margin-left: 10%;
         text-align: center;
     }
 
@@ -270,17 +244,12 @@ footer {
 
     .inspiration {
         margin-top: 60%;
-        margin-left: 5%;
+        margin-left: 0;
         text-align: center;
     }
 
     .insp-sub {
-        margin-left: 10%;
-    }
-
-    #fa-chevron-down {
-        margin-left: 0;
-        margin-top: 25%;
+        margin-left: 0%;
     }
 
     .between-text {
@@ -316,38 +285,78 @@ footer {
       border-bottom: 0.5px gray solid;
     }
 
+    /*need to fix this scroll down arrow*/
+    #fa-chevron-down {
+        margin-left: 0;
+        margin-top: 25%;
+        display: none;
+    }
+
 
 
 }
 
+
+
+nav {
+height: 0;  /*erased the white space at the top
+/*border: solid;*/
+}
+
+.logo-space {
+    position: absolute;
+    width: 30%;
+    margin-left: 7%;
+    margin-right: 0;
+    margin-top: 4%;
+
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+
+    padding: 20px;
+    text-align: center;
+/*    border: red solid;*/
+}
+
+.absolute-nav {
+    position: absolute;
+    width: 57%;
+    margin-left: 38%;
+    margin-right: 20%;
+    margin-top: 4%;
+
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+
+    padding: 20px;
+    justify-content: right;
+/*     border: #fff solid;*/
+}
+
+.item {
+    width: 100px;
+    margin-left: 4%;
+/*    border: #fff solid;*/
+}
+
+a:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
 
 
 
 
 /* BURGER MENU */
 
-nav {
-height: 0;  /*erased the white space at the top*/
-}
-
 #menu a {   /* now worked when added #menu */
   text-decoration: none;
   color: #fff !important;
   transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #fff;
-  cursor: pointer;    /*works?*/
-  text-decoration: none !important;
-}
-
-a:active {
-  text-decoration: none !important;
-}
-
-a:visited {
-  text-decoration: none !important;
 }
 
 #menuToggle {
@@ -356,7 +365,7 @@ a:visited {
  /* menu position:*/
   top: 50px;
   left: 50px;
-  
+ /* this goes on the digital and the image */
   z-index: 1;
 }
 
