@@ -4,7 +4,7 @@ body, html {
     position: relative;
 }
 
-.nav {
+/*.nav {
     width: 100%;
     position: absolute;
     margin-top: 5%;
@@ -13,20 +13,20 @@ body, html {
     color: #fff;
     padding: 20px;
     list-style: none;
-}
+}*/
 
-.logo-space {
+/*.logo-space {
     width: 30%;
     margin-left: 10%;
-}
+}*/
 
-span {
+/*span {
     display: inline;
     margin-left: 2%;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1.1em;
     letter-spacing: 0.1em;
-}
+}*/
 
 .image-text {
     position: absolute;
@@ -74,21 +74,7 @@ span {
     margin-top: 15%;
     background-color: transparent;
     color: #fff;
-}
-
-.parallax1 {
-    /* The image used */
-    /*background-image: url("img/zac-ong-577634-unsplash.jpg");*/
-    background-image: url("img/piotr-chrobot-276746-unsplash.jpg");
-
-    /* Set a specific height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    cursor: pointer;
 }
 
 .between-text {
@@ -100,11 +86,8 @@ span {
     background-color: gray;
     color: #fff;
     height: 400px;
-    color: #fff;
- /*   font-family: 'Open Sans Condensed', sans-serif;*/
     font-family: 'Muli', sans-serif;
     font-size: 1.05em;
-/*    letter-spacing: 0.2em;*/
 }
 
 .between-text h5 {
@@ -122,13 +105,27 @@ span {
     border: #000 solid;
 }
 
+.parallax1 {
+    /* The image used */
+    /*background-image: url("img/zac-ong-577634-unsplash.jpg");*/
+    background-image: url("img/piotr-chrobot-276746-unsplash.jpg");
+
+    /* Set a specific height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .parallax2 {
     /* The image used */
     background-image: url("img/james-padolsey-152010-unsplash.jpg");
 
     /* Set a specific height */
     height: 100%; 
-/*    margin-top: 500px;*/
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -143,7 +140,6 @@ span {
 
     /* Set a specific height */
     height: 100%; 
-/*    margin-top: 500px;*/
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -158,7 +154,6 @@ span {
 
     /* Set a specific height */
     height: 100%; 
-    /*margin-top: 500px;*/
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -166,5 +161,249 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+
+
+/* MEDIA QUERIES: */
+
+
+/* smaller than 320 ? */
+/* iPhone 6 PORTRAIT ?*/
+@media screen and (max-width: 400px) {
+
+    body, html {
+        /*height: 100%; */  /*REQUIRED!*/
+        position: relative;
+        width: 140%;
+    }
+
+    .parallax1 {
+        height: 200%; 
+    }
+    .parallax2 {
+        height: 200%; 
+    }
+    .parallax3 {
+        height: 200%; 
+    }
+    .parallax4 {
+        height: 200%; 
+    }
+
+    .image-text {
+        text-align: center;
+        margin-top: 70%;
+        margin-left: 0;
+    }
+
+    .image-title {
+
+    }
+
+    .digital {
+        font-size: 9em;
+    }
+
+    .subtext {
+        margin-left: 0;
+        font-size: 1.5em;
+   /*     letter-spacing: 0.3em;*/
+    }
+
+    .complexity {
+        margin-top: 60%;
+        margin-left: 14%;
+        text-align: center;
+    }
+
+    .performance {
+        margin-top: 60%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .perform-sub {
+        margin-left: 2%;
+    }
+
+    .inspiration {
+        margin-top: 60%;
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    .insp-sub {
+        margin-left: 10%;
+    }
+
+    #fa-chevron-down {
+        margin-left: 0;
+        margin-top: 45%;
+    }
+
+    .between-text {
+        padding-top: 12%; 
+        height: 900px;
+        font-size: 1.8em;
+    }
+
+    .between-text h5 {
+       font-size: 1.5em;
+    }
+
+    .smaller-text-field {
+        height: 700px;
+    }
+
+    #button {
+        margin-top: 15%;
+        margin-left: 20%;
+    }
+
+
+}
+
+
+
+
+
+/* BURGER MENU */
+
+nav {
+height: 0;  /*erased the white space at the top*/
+}
+
+#menu a {   /* now worked when added #menu */
+  text-decoration: none;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fff;
+  cursor: pointer;    /*works?*/
+  text-decoration: none !important;
+}
+
+a:active {
+  text-decoration: none !important;
+}
+
+a:visited {
+  text-decoration: none !important;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd; /*this is the burger menu color */
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* Transform all the slices of hamburger into a crossmark */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #cdcdcd;  /* cross color */
+}
+
+/* But let's hide the middle one */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* And the last one should go the other direction */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* Make this absolute positioned at the top left of the screen */
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+/*    margin: -100px 0 0 500px; */ /* making in to the right side? */
+
+  padding: 50px;
+  padding-top: 125px;
+  
+  background-color: #000;
+
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+  padding: 20px 0;
+  font-size: 22px;
+  text-align: center;
+  border-bottom: 0.5px gray solid;
+}
+
+/* And let's slide it in from the left */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+/* END OF BURGER MENU */
+
+
+
 
 
