@@ -300,7 +300,10 @@ footer {
 /* fix for the iphone */
 @media (min-device-width : 320px) and (max-device-width : 568px)  { 
     .parallax {
-        background-attachment: scroll;
+/*        background-attachment: scroll;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
         /* default height landscape*/
         height: 620px; /*should be 320px*/
 
