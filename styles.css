@@ -2,6 +2,17 @@
 body, html {
     height: 100%;   /*REQUIRED!*/
     position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: red solid;
+}
+
+.container {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 150% !important;
+    border: solid;
+
 }
 
 /*.nav {
@@ -34,6 +45,8 @@ body, html {
     margin-left: 23%;
     color: #fff;
     font-family: 'Open Sans Condensed', sans-serif;
+
+    z-index: 2;  /*to overwrite container class*/
 }
 
 .image-title {
@@ -182,26 +195,41 @@ footer {
 @media screen and (max-width: 400px) {
 
     body, html {
-        /*height: 100%; */  /*REQUIRED!*/
-        position: relative;
-        width: 150%;
+    height: 100%;   /*REQUIRED!*/
+    margin: 0 !important;
+    padding: 0 !important;
+    border: red solid;
+
+    width: 150%;
     }
+
+    .container {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        border: solid;
+
+    }
+
+/*    body, html {
+        width: 140%;
+    }*/
 
     .parallax1 {
         height: 200%; 
-        width: 720px;
+        width: 100%;
     }
     .parallax2 {
         height: 200%; 
-        width: 720px;
+        width: 100%;
     }
     .parallax3 {
         height: 200%; 
-        width: 720px;
+        width: 100%;
     }
     .parallax4 {
         height: 200%; 
-        width: 720px;
+        width: 100%;
     }
 
     .image-text {
