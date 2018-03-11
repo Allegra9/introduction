@@ -177,8 +177,8 @@ footer {
 @media screen and (max-width: 400px) {
 
     body, html {
-    height: 100%;   /*REQUIRED!*/
-    width: 580px;
+    height: 200px;   /*REQUIRED!*/
+    width: 600px;
     }
 
     .absolute-nav {
@@ -186,7 +186,7 @@ footer {
     }
 
     span.logo-space {
-    margin-left: 35%;
+        margin-left: 35%;
     }
 
     .parallax1 {
@@ -223,7 +223,7 @@ footer {
     .subtext {
         margin-left: 0;
         font-size: 1.7em;
-   /*     letter-spacing: 0.3em;*/
+   /*   letter-spacing: 0.3em;*/
     }
 
     .complexity {
@@ -292,6 +292,9 @@ footer {
         display: none;
     }
 
+    footer {
+        font-size: 2em;
+    }
 
 
 }
