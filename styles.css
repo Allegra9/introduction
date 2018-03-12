@@ -142,8 +142,8 @@ footer {
 /*        font-size: 1.3em;
         letter-spacing: 0.3em;*/
     }
-
-/*            .parallax1 {
+/*
+            .parallax1 {
                 height: 1300px; 
                 width: 100%;
             }
@@ -215,11 +215,11 @@ footer {
     /* fix for the ipad */
 @media (min-device-width : 768px) and (max-device-width : 1024px)  { 
     .parallax {
-     /*   background-attachment: scroll;*/
+        background-attachment: scroll;
 
-    background-attachment: fixed !important;
+/*    background-attachment: fixed !important;
     background-position: center !important;
-    background-repeat: no-repeat !important;
+    background-repeat: no-repeat !important;*/
 
         /* default height landscape*/
         height: 768px;
@@ -248,14 +248,14 @@ footer {
 /* fix for the iphone */
 @media (min-device-width : 320px) and (max-device-width : 568px)  { 
     .parallax {
-/*        background-attachment: scroll;*/
+        background-attachment: scroll;
 
-    background-attachment: fixed !important;
+/*    background-attachment: fixed !important;
     background-position: center !important;
-    background-repeat: no-repeat !important;
+    background-repeat: no-repeat !important;*/
 
         /* default height landscape*/
-        height: 620px; /*should be 320px*/
+        height: 720px; /*should be 320px*/
 
         width: 568px;
     }
@@ -268,7 +268,7 @@ footer {
 @media (min-device-width : 320px) and (max-device-width : 568px) and (orientation: portrait) {
     .parallax {
         /* default height landscape*/
-        height: 1568px; /*should be 568px*/
+        height: 1268px; /*should be 568px ? */
 
         width: 568px;
     }
