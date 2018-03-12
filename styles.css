@@ -143,22 +143,22 @@ footer {
         letter-spacing: 0.3em;*/
     }
 
-/*    .parallax1 {
-        height: 1300px; 
-        width: 100%;
-    }
-    .parallax2 {
-        height: 1300px;
-        width: 100%;
-    }
-    .parallax3 {
-        height: 1300px;
-        width: 100%;
-    }
-    .parallax4 {
-        height: 1300px;
-        width: 100%;
-    }*/
+            .parallax1 {
+                height: 1300px; 
+                width: 100%;
+            }
+            .parallax2 {
+                height: 1300px;
+                width: 100%;
+            }
+            .parallax3 {
+                height: 1300px;
+                width: 100%;
+            }
+            .parallax4 {
+                height: 1300px;
+                width: 100%;
+            }
 
     .between-text {
         padding-top: 12%; 
@@ -181,6 +181,7 @@ footer {
 
     #button {
         padding: 30px 50px 30px 50px;
+        font-size: 1.5em;
     }
 
     #menuToggle {
@@ -217,9 +218,9 @@ footer {
      /*   background-attachment: scroll;*/
 
     background-attachment: fixed !important;
-    background-position: center;
-    background-repeat: no-repeat;
-        
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
         /* default height landscape*/
         height: 768px;
 
@@ -250,8 +251,8 @@ footer {
 /*        background-attachment: scroll;*/
 
     background-attachment: fixed !important;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 
         /* default height landscape*/
         height: 620px; /*should be 320px*/
