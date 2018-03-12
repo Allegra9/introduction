@@ -21,25 +21,6 @@ body, html {
     letter-spacing: 0.3em;
 }
 
-#fa-chevron-down {
-    align-content: center;
-    width: 100%;
-    margin-top: 10%;
-    background-color: transparent;
-    color: #fff;
-    cursor: pointer;
-}
-
-#scroll-down {
-    align-content: center;
-    width: 100%;
-    background-color: transparent;
-    color: #fff;
-    cursor: pointer;
-    font-family: 'Muli', sans-serif;
-    font-size: 1em;
-}
-
 .between-text {
     position: relative;
     padding: 10%;
@@ -171,7 +152,7 @@ footer {
     }
 
 
-    .smaller-text-field {
+    .smaller-text {
         height: 700px;
     }
 
@@ -198,13 +179,6 @@ footer {
       border-bottom: 0.5px gray solid;
     }
 
-    /*need to fix this scroll down arrow*/
-    #fa-chevron-down {
-        margin-left: 0;
-        margin-top: 25%;
-        display: none;
-    }
-
     footer {
         font-size: 2em;
     }
@@ -215,15 +189,14 @@ footer {
     /* fix for the ipad */
 @media (min-device-width : 768px) and (max-device-width : 1024px)  { 
     .parallax {
-        background-attachment: scroll;
+ /*       background-attachment: scroll;*/
 
-/*    background-attachment: fixed !important;
+    background-attachment: fixed !important;
     background-position: center !important;
-    background-repeat: no-repeat !important;*/
+    background-repeat: no-repeat !important;
 
         /* default height landscape*/
         height: 768px;
-
         width: 1024px;
     }
     body, html {
@@ -234,9 +207,13 @@ footer {
 /* fix for the ipad */
 @media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
     .parallax {
+       /* added here too*/
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
         /* default height landscape*/
         height: 1024px;
-
         width: 768px;
     }
     body, html {
@@ -256,7 +233,6 @@ footer {
 
         /* default height landscape*/
         height: 720px; /*should be 320px*/
-
         width: 568px;
     }
     body, html {
@@ -269,7 +245,6 @@ footer {
     .parallax {
         /* default height landscape*/
         height: 1268px; /*should be 568px ? */
-
         width: 568px;
     }
     body, html {
